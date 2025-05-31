@@ -1,2 +1,2 @@
 # knowledge-bytes
-My random CS/development notes.
+My (hopefully) organized CS/development notes.
