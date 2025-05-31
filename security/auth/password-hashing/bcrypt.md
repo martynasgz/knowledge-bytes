@@ -28,4 +28,4 @@ This is actually three fields, delimited by "$":
 - `10` is the cost factor; $2^{10}$ iterations of the key derivation function are used (which is not enough, by the way. I'd recommend a cost of 12 or more.)
 - `vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa` is the salt and the cipher text, concatenated and encoded in a modified Base-64. The first 22 characters decode to a 16-byte value for the salt. The remaining characters are cipher text to be compared for authentication[^1].
 
-[^1]: [Stack Overflow answer](https://stackoverflow.com/a/6833165)
+[^1]: [Stack Overflow answer](https://stackoverflow.com/a/6833165).
