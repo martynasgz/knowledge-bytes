@@ -4,7 +4,7 @@
 
 From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS): Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources.
 
-## Example on what it prevents against
+## Example on What It Prevents Against
 
 Imagine you log into your bank and after authorization your browser receives a token. The token is stored in local or session storage, unencrypted, within the browser.
 
