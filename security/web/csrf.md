@@ -11,8 +11,6 @@ User lands on an attackers website with a different domain. Its goal is to use t
 
 ## How CSRF Solves This
 
-To secure from this attack, the backend needs a way to determine if the HTTP request is coming from a legitimate user AND from the expected website.
-
-This can be done by generating an Anti-CSRF token in the back-end, and explicitly sending it through each subsequent requests as a header.
-
+To secure from this attack, the backend needs a way to determine if the HTTP request is coming from a legitimate user AND from the expected website.  
+This can be done by generating an Anti-CSRF token in the back-end, and explicitly sending it through each subsequent requests as a header.  
 This protects from the attacker abusing the browser's automatic inclusion of cookies: it invalidates the attacker's website, as only the same website that initially requested for the CSRF token can read the cookie.
