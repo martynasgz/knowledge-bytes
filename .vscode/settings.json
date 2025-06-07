@@ -18,9 +18,12 @@
     "_site/**": true
   },
   "files.insertFinalNewline": true,
-  "markdown.styles": [".vscode/custom-tag-style.css"],
+  "markdown.styles": [
+    ".vscode/custom-tag-style.css"
+  ],
   // where to paste
   "pasteImage.path": "${projectRoot}/assets",
   // base for URL to image
-  "pasteImage.basePath": "${projectRoot}"
+  "pasteImage.basePath": "${projectRoot}",
+  "markdown.extension.preview.autoShowPreviewToSide": true,
 }
