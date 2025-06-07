@@ -4,7 +4,7 @@
 
 ### Diagram
 
-![assymetric encryption diagram](/assets/assymetric-encryption.png)
+![asymmetric encryption diagram](/assets/assymetric-encryption.png)
 
 ### Use Cases
 
