@@ -1,6 +1,6 @@
 # Encryption
 
-## Assymetrc Encryption 
+## Asymmetric Encryption  
 
 ### Diagram
 
