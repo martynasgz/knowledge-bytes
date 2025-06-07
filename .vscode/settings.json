@@ -25,5 +25,4 @@
   "pasteImage.path": "${projectRoot}/assets",
   // base for URL to image
   "pasteImage.basePath": "${projectRoot}",
-  "markdown.extension.preview.autoShowPreviewToSide": true,
 }
