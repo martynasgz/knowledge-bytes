@@ -41,7 +41,8 @@ const generalImpl: GeneralFunction = (fn: (document: Document) => void) => {
 };
 
 workspaceImpl = generalImpl;
-// ^--- TS error! If generalImpl calls this with QuoteDocument, we'll get runtime errors
+// ^--- TS error! generalImpl expects to be able to call fn() with QuoteDocument too,
+// but this violates the WorkspaceFunction type
 ```
 
 More on this - https://en.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science)#Function_types.
