@@ -1,6 +1,6 @@
 # System Calls
 
-System calls represent an interface to services provided by the operating system, allowing user programs to request privileged operations to be performed by the OS in kernel mode. Otherwise user code is ran in the restricted user mode. If you only have non-privileged code that doesn't need system calls, the code doesn't depend on the OS anymore.
+System calls represent an interface to services provided by the operating system, allowing user programs to request privileged operations to be performed by the OS in kernel mode. Otherwise user code is ran in the restricted user mode. Thus, if you only have non-privileged code that doesn't need system calls, the code doesn't depend on the OS anymore.
 
 ## Relationship with the OS
 
