@@ -23,6 +23,6 @@
   ],
   // where to paste
   "pasteImage.path": "${projectRoot}/assets",
-  // base for URL to image
   "pasteImage.basePath": "${projectRoot}",
+  "pasteImage.prefix": "/"
 }
