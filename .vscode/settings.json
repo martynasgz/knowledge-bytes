@@ -1,5 +1,6 @@
 {
   "files.autoSave": "onFocusChange",
+  "workbench.colorTheme": "Gray Matter Dark",
   "editor.minimap.enabled": false,
   "editor.wrappingIndent": "indent",
   "editor.overviewRulerBorder": false,
