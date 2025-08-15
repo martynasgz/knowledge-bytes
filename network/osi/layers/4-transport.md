@@ -1,0 +1,23 @@
+# Transport
+
+Ensures *service-to-service* delivery. Lower levels ensure data arrives at the right host. But what ensures which program the data is received by? The transport layer. It:
+- Distinguishes data streams.  
+![transport layer](/assets/2025-08-15-21-57-07.png)  
+- Has yet another addressing scheme - ports.
+- Has different strategies to accomplish the goal:
+  - TCP uses 0-65535 ports & favours reliability.
+  - UDP uses 0-65535 ports & favours speed & efficiency.
+
+So, every single program that expects to receive data on the wire is going to be associated with a particular port. Then, when data arrives on the wire, it's going to include the additional layer 4 header in [[3-network#Data Flow|addition to the layer 2 & 3 headers]]. That header will indicate the port of the program that should receive the data.
+
+## Data Flow
+
+Let's say, we have a client `1.1.1.1` and 3 servers. Servers are nothing but a computer running software which know how to respond specific requests. Each of these software is assigned a pre-defined well-known port number which correlate to the network application:
+- Host `2.2.2.2`'s application `www.bank.com` is listening for a secure web request using HTTPS through the TCP port `443`.
+- Host `3.3.3.3`'s application `www.site.com` is listening for a web request using HTTP through the by-default TCP port `80`.
+- Host `4.4.4.4`'s chat server is listening on UDP port `6667`.
+
+When a client is making a request to a server, it's not only making a request to the IP address, but also a specific port. For each connection, it chooses a random port as a source which it then listens on for a response from the server.  
+So, for example, a connection from the client to the site `www.site.com` would mean that the source IP is `1.1.1.1`, whereas the port is randomly chosen - let's say it's `9999`. Meanwhile, the destination is `3.3.3.3` with the TCP port `80`, which is the HTTP application. To reiterate, IP addresses exist in the layer 3 header of the packet, whereas the ports - in the layer 4. The randomly selected source port is important, as the client will listen to it for a response to the request. So, when `www.site.com` responds, the packet's header will include `3.3.3.3:80` as the source & `1.1.1.1:9999` as the destination. To put it briefly, the connection could be defined as `TCP 1.1.1.1:9999 <-> 3.3.3.3:80`. A picture of this whole example's flow:  
+![transport flow](/assets/2025-08-15-22-29-23.png)  
+The process of separating connections per port allow multiple connections to the same server. Example - browser tabs.  
