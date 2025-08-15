@@ -10,17 +10,29 @@ Network - logical grouping of hosts which require similar connectivity. Networks
 Hosts on the network share the same space IP address space:
 ![network example](/assets/2025-08-15-19-46-10.png)
 
-The reason one might separate sets of networks is because they need different connectivity requirements. But, in the end, if one wants those networks to communicate between each other, they'll need a [[data-link#Router|router]].
+The reason one might separate sets of networks is because they need different connectivity requirements. But, in the end, if one wants those networks to communicate between each other, they'll need a [[3-network#Router|router]].
 
 ## Devices
 
 ### Layer Specific
 
-- [[physical#Devices|Physical]]
-- [[data-link#Devices|Data Link]]
-- [[network#Devices|Network]]
+- [[1-physical#Devices / Technology|Physical]]
+- [[2-data-link#Devices|Data Link]]
+- [[3-network#Devices|Network]]
 
-### Others
+### Those Considered as Switches & Routers
+
+There are many other network devices:
+- Access points
+- [[#Firewall|Firewalls]]
+- [[#Load Balancer|Load balancers]]
+- Virtual switches
+- Layer 3 switches
+- IDS/IPS
+- [[#Proxy Server|Proxies]]
+- Virtual Routers
+
+But all of them perform routing and/or switching.
 
 #### Firewall
 

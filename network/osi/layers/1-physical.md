@@ -1,8 +1,12 @@
 # Physical
 
-The physical layer works with the actual physical signal, without trying to interpret the data behind it.
+Physical layer's goal is to transport bits between hosts. It works with the actual physical signal, without trying to interpret the data behind it.
 
-## Devices
+## Devices / Technology
+
+### Cables
+
+Cables such Ethernet, Coaxial & Fiber.
 
 ### Modem
 
@@ -19,3 +23,7 @@ Since connecting each host to each other is not scalable, we need a device that 
 Hub fixes that problem - it is a multi-port repeater. It takes a signal and replicates it to all the others ports. But there's a disadvantage - everyone receives everyone else's data.  
 In the example below, host 1 wants to communicate with host 2, so it sends data to the hub. But the data gets repeated to everyone:
 ![communication via hubs](/assets/2025-08-15-19-25-33.png)
+
+### Wi-Fi
+
+<!-- TBD -->
