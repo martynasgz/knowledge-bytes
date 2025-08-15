@@ -23,7 +23,7 @@ Anything with an IP address is considered to be of layer 3 in the OSI model.
 
 ### Multilayer Switch (MLS)
 
-Provides normal [[2-data-link| layer 2]] network switching services, but also allows layer 3 or higher OSI model services. The most common MLS is a layer 3 switch. It not only utilizes an ASIC chip for switching, but it also routes. This allows passing data to non-local network devices.
+Provides normal [[2-data-link|layer 2]] network switching services, but also allows layer 3 or higher OSI model services. The most common MLS is a layer 3 switch. It not only utilizes an ASIC chip for switching, but it also routes. This allows passing data to non-local network devices.
 
 ### Router
 
