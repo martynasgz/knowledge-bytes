@@ -37,7 +37,7 @@ A device that connects many remote networks and clients to a central corporate n
 
 Distributes requests (workload) among different server instances, in a way that no single one gets overloaded.
 
-#### Proxy server
+#### Proxy Server
 
 Appliance that requests resources on behalf of client machines - it hides and protects it, can filter content, and increase network performance via caching.
 
