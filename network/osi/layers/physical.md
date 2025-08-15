@@ -1,15 +1,21 @@
 # Physical
 
+The physical layer works with the actual physical signal, without trying to interpret the data behind it.
+
 ## Devices
 
 ### Modem
 
 Word modem is derived from a contraction of modulator/demodulator. It takes a digital signal coming from a digital node and converts it to an analog signal (modulates) to be placed on the wire. In return, it accepts an analog signal from the wire and converts it to a digital one (demodulates) so the node understands it.
 
+### Repeater
+
+Repeaters regenerate signals, so that data doesn't decay as it travels. They allow communication between greater distances.
+
 ### Hub
 
-Just like a modem, doesn't care where the signal comes from or goes to. It takes a signal and replicates it to all the others. Not really common in modern networking.
+Since connecting each host to each other is not scalable, we need a device that would sit in the center of the network, and each host would be connected to it. That way, when a new host gets added, we only need to make one new connection.
 
-
-
-
+Hub fixes that problem - it is a multi-port repeater. It takes a signal and replicates it to all the others ports. But there's a disadvantage - everyone receives everyone else's data.  
+In the example below, host 1 wants to communicate with host 2, so it sends data to the hub. But the data gets repeated to everyone:
+![communication via hubs](/assets/2025-08-15-19-25-33.png)
