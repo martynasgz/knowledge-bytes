@@ -5,10 +5,10 @@
 **Host** - any device which sends or receives traffic. Hosts are identified by their **IP address**.
 
 **Network** - logical grouping of hosts which require similar connectivity. Networks can contain other networks, called subnets:
-![networks and subnets](/assets/2025-08-15-19-14-36.png)
+![networks and subnets|500](/assets/2025-08-15-19-14-36.png)
 
 Hosts on the network share the same space IP address space:
-![network example](/assets/2025-08-15-19-46-10.png)
+![network example|500](/assets/2025-08-15-19-46-10.png)
 
 The reason one might separate sets of networks is because they need different connectivity requirements. But, in the end, if one wants those networks to communicate between each other, they'll need a [[3-network#Router|router]].
 
