@@ -1,4 +1,4 @@
-# Contraviance
+# Contravariance
 
 ## Function input contravariance
 
