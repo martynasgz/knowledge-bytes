@@ -1,4 +1,4 @@
-# Open Systems Interconnection (OSI) Model
+# Open Systems Interconnection
 
 ## Terms
 
@@ -10,7 +10,7 @@
 Hosts on the network share the same space IP address space:
 ![network example|500](/assets/2025-08-15-19-46-10.png)
 
-The reason one might separate sets of networks is because they need different connectivity requirements. But, in the end, if one wants those networks to communicate between each other, they'll need a [[3-network#Router|router]].
+The reason one might separate sets of networks is because they need different connectivity requirements. But, in the end, if one wants those networks to communicate between each other, they'll need a [[3. Network#Router|router]].
 
 ## OSI vs. TCP/IP
 
@@ -20,9 +20,9 @@ When the OSI model was first created, each of the the last 3 layers (session, pr
 
 ### Layer Specific
 
-- [[1-physical#Devices / Technology|Physical]]
-- [[2-data-link#Devices|Data Link]]
-- [[3-network#Devices|Network]]
+- [[1. Physical#Devices / Technology|Physical]]
+- [[2. Data Link#Devices|Data Link]]
+- [[3. Network#Devices|Network]]
 
 ### Those Considered as Switches & Routers
 
@@ -47,7 +47,7 @@ It blocks packets from entering or leaving the network via:
 
 #### VPN Concentrator
 
-A device that connects many remote networks and clients to a central corporate network. Concentrators can function at multiple layers of the OSI model - layer 2, 3 & 7. Similarly to a [[vpn/index|VPN]], it encrypts outgoing and incoming data and uses security protocols to create safe tunnels, but on a larger scale. It is widely used by large companies with many remote employees.
+A device that connects many remote networks and clients to a central corporate network. Concentrators can function at multiple layers of the OSI model - layer 2, 3 & 7. Similarly to a [[VPN|VPN]], it encrypts outgoing and incoming data and uses security protocols to create safe tunnels, but on a larger scale. It is widely used by large companies with many remote employees.
 
 #### Load Balancer
 

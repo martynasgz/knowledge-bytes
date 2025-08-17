@@ -1,4 +1,4 @@
-# Design Pattern Usage
+# Usage
 
 ## Singleton
 - Use the Singleton pattern when a class in your program should have just a single instance available to all clients; for example, a single database object shared by different parts of the program.

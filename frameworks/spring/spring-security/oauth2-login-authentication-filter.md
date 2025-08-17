@@ -1,4 +1,4 @@
-# OAuth2LoginAuthenticationFilter
+# oauth2-login-authentication-filter
 
 ## Process
 

@@ -1,4 +1,4 @@
-# (Stale) Closure
+# Closure
 
 ## Example
 

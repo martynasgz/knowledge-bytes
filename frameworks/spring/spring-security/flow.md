@@ -1,4 +1,4 @@
-# Spring Security Internal Flow
+# Flow
 
 ![spring security flow diagram](/assets/spring-security-flow.png)  
 - (1) User sends request to the web application, which is secured by the **Spring Security Filters**. As soon as the request is received by the servlet container, since we have added spring security, the container will make the request go through the filters first before reaching the corresponding servlet. The filters will have logic to check if user is already authenticated / has a session or not. If not, it will enforce authentication.
