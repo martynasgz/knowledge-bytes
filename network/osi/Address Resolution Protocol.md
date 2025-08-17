@@ -45,3 +45,5 @@ ARP cache            ARP cache:
 With this response, A's able to map `10.1.1.3` to `b2b3` in its ARC cache.
 Now, since it has both layer 2 & 3 data, it is able to send the data with appropriate headers.
 AND, further data exchange is going to be simple, since both hosts now have each others ARP mapping cached.
+
+During across-network requests, the procedure remains the same, just that the starting host needs to find the MAC address for a router instead. It finds the router's IP through it's default gateway, and sends an ARP request. When it finds out the MAC address, it can then successfully pass over the data to the router. Also, this MAC address will be reused from the ARP cache whenever sending data outside this network.
