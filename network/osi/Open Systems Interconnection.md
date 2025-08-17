@@ -12,6 +12,13 @@ Hosts on the network share the same space IP address space:
 
 The reason one might separate sets of networks is because they need different connectivity requirements. But, in the end, if one wants those networks to communicate between each other, they'll need a [[3. Network#Router|router]].
 
+## Layers
+
+1. [[1. Physical|Physical]]
+2. [[2. Data Link|Data Link]]
+3. [[3. Network|Network]]
+4. [[4. Transport|Transport]]
+
 ## OSI vs. TCP/IP
 
 When the OSI model was first created, each of the the last 3 layers (session, presentation & application) had a distinct function, independent from the rest. But recently the distinction has become pretty vague - every application is free to implement the function of these 3 layers as they choose. Therefore, often, these layers are considered as a single application layer, which is exactly what the TCP/IP model does.
