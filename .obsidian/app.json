@@ -3,5 +3,6 @@
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
   "showInlineTitle": false,
-  "attachmentFolderPath": "assets"
+  "attachmentFolderPath": "assets",
+  "newLinkFormat": "absolute"
 }
