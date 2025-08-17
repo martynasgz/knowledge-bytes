@@ -10,9 +10,7 @@ Let's say we have a switch with hosts connected to its ports:
 ```plantuml
 @startnwdiag
 nwdiag {
-  // Define the network (switch)
   network switch {
-    // Devices connected to this switch
     A [address = "a1a1"];
     B [address = "b2b2"];
     C [address = "c3c3"];
