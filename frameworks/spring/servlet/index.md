@@ -4,4 +4,4 @@ In java web apps, **Servlet Container** (Web Server) takes care of translating t
 
 Servlet containers convert HTTP messages into ServletRequests and hand them over to Servlet methods as parameters. Similarly, ServletResponse is returned as an output to Servlet Container from Servlet. Everything we write inside Java web apps are driven by Servlets.
 
-![servlet diagram](/assets/servlet-diagram.png)
+![servlet diagram|500](/assets/servlet-diagram.png)

@@ -10,7 +10,7 @@ A certificate signing request (CSR) is made to the CA, which then uses its priva
 
 ## Chain of Trust
 
-![chain of trust](/assets/certificate-chain-of-trust.png)  
+![chain of trust|500](/assets/certificate-chain-of-trust.png)  
 Root CA signed its certificate with its own private key (self-signed certificate). That means that the owner (subject) and issuer info is the same. Intermediate CA's certificate is hashed, and then signed using root CA's private key, displaying that the root CA trusts the intermediate CA. Root CA, while signing, also adds information to the certificate: marks itself as the issuer, etc. Same goes for the end user certificate, but it's signed by the intermediate CA's private key instead.
 
 ### Verifying Chain of Certificates

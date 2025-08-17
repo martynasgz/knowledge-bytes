@@ -4,7 +4,7 @@
 
 ### Diagram
 
-![asymmetric encryption diagram](/assets/assymetric-encryption.png)
+![asymmetric encryption diagram|500](/assets/assymetric-encryption.png)
 
 ### Use Cases
 
@@ -15,7 +15,7 @@
 
 > In case of certificates, certificate is the data in the picture, and is hashed and encrypted by the Certification Authority.
 
-![signing and verifying signatures diagram](/assets/sign-verify-signature.png)
+![signing and verifying signatures diagram|500](/assets/sign-verify-signature.png)
 
 Signing and verifying signature using asymmetric keys has these **positive effects**:
 
