@@ -1,0 +1,3 @@
+.image-embed.image-embed img:not([width]) {
+    max-width: 500px;
+}
