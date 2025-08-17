@@ -1,4 +1,4 @@
-# Authorization Code Flow
+# Authorization Code
 
 ## Visualization
 

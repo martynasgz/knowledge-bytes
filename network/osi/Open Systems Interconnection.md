@@ -1,5 +1,7 @@
 # Open Systems Interconnection
 
+> Credit to https://youtu.be/gYN2qN11-wE
+
 ## Terms
 
 **Host** - any device which sends or receives traffic. Hosts are identified by their **IP address**.
@@ -23,6 +25,36 @@ The reason one might separate sets of networks is because they need different co
 
 When the OSI model was first created, each of the the last 3 layers (session, presentation & application) had a distinct function, independent from the rest. But recently the distinction has become pretty vague - every application is free to implement the function of these 3 layers as they choose. Therefore, often, these layers are considered as a single application layer, which is exactly what the TCP/IP model does.
 
+## Communication Between Hosts
+
+### Same Network
+
+Let's say, two hosts are directly connected to each other:
+> The shortened MAC, the IP address & subnet mask are below each host.
+```
+[data]->
+[A]-----------------[B]
+a2a2                b2b3
+10.1.1.22           10.1.1.3
+255.255.255.0       255.255.255.0
+```
+> Subnet masks identify the size of the network!
+
+What host A knows:
+- It has some data to send to B.
+- Knows the IP address of B because:
+	- It was typed with `ping 10.1.1.3`.
+	- It was acquired from a DNS.
+	- ...
+- That host B is in the same network by looking at its IP and subnet (TODO: subnetting at https://subnetipv4.com/).
+
+What host A doesn't know:
+- B's MAC address - needs to find it out by using [[Address Resolution Protocol|ARP]].
+
+After finding out the MAC address, host A will:
+- Attach a layer 2 & 3 headers.
+- Send the data.
+
 ## Devices
 
 ### Layer Specific
@@ -31,7 +63,7 @@ When the OSI model was first created, each of the the last 3 layers (session, pr
 - [[2. Data Link#Devices|Data Link]]
 - [[3. Network#Devices|Network]]
 
-### Those Considered as Switches & Routers
+### Those Considered as Switches/Routers
 
 There are many other network devices:
 - Access points
