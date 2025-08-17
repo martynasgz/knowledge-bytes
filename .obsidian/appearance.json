@@ -1,0 +1,9 @@
+{
+  "showRibbon": true,
+  "showViewHeader": true,
+  "nativeMenus": false,
+  "baseFontSizeAction": true,
+  "baseFontSize": 20,
+  "textFontFamily": "JetBrains Mono",
+  "interfaceFontFamily": "JetBrains Mono"
+}
