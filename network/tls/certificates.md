@@ -10,7 +10,7 @@ A certificate signing request (CSR) is made to the CA, which then uses its priva
 
 ## Chain of Trust
 
-![chain of trust](/assets/certificate-chain-of-trust.png)  
+![chain of trust](certificate-chain-of-trust.png)  
 Root CA signed its certificate with its own private key (self-signed certificate). That means that the owner (subject) and issuer info is the same. Intermediate CA's certificate is hashed, and then signed using root CA's private key, displaying that the root CA trusts the intermediate CA. Root CA, while signing, also adds information to the certificate: marks itself as the issuer, etc. Same goes for the end user certificate, but it's signed by the intermediate CA's private key instead.
 
 ### Verifying Chain of Certificates
@@ -23,14 +23,14 @@ Each item in the chain checks if it actually signed the certificate with its pub
 ### Subject's Public Key
 
 Subject's Public Key is the Owner's public key that will be used to perform TLS handshake.  
-![certificate public key](/assets/certificate-public-key.png)
+![certificate public key](certificate-public-key.png)
 
 ### Signature Value
 
 Certificate Signature Value is the hashed and encrypted certificate.  
-![certificate signature value](/assets/certificate-signature-value.png)
+![certificate signature value](certificate-signature-value.png)
 
 ### Signature Verification Clues
 
 SHA-256 Fingerprints field shows us the values used during the signature verification. The **Public Key** of the CA which was used to decrypt the certificate, and the decrypted **Certificate**.  
-![certificate sha-256 fingerprints](/assets/certificate-fingerprints.png)
+![certificate sha-256 fingerprints](certificate-fingerprints.png)

@@ -4,5 +4,6 @@
   "global-search-and-replace",
   "cm-typewriter-scroll-obsidian",
   "vscode-editor",
-  "show-hidden-files"
+  "show-hidden-files",
+  "obsidian-plantuml"
 ]

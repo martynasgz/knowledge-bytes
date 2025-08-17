@@ -4,5 +4,5 @@
   "showUnsupportedFiles": true,
   "showInlineTitle": false,
   "attachmentFolderPath": "assets",
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "shortest"
 }

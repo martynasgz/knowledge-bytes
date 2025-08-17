@@ -7,10 +7,10 @@
 **Host** - any device which sends or receives traffic. Hosts are identified by their **IP address**.
 
 **Network** - logical grouping of hosts which require similar connectivity. Networks can contain other networks, called subnets:
-![networks and subnets](/assets/2025-08-15-19-14-36.png)
+![networks and subnets](2025-08-15-19-14-36.png)
 
 Hosts on the network share the same space IP address space:
-![network example](/assets/2025-08-15-19-46-10.png)
+![network example](2025-08-15-19-46-10.png)
 
 The reason one might separate sets of networks is because they need different connectivity requirements. But, in the end, if one wants those networks to communicate between each other, they'll need a [[3. Network#Router|router]].
 
@@ -69,7 +69,7 @@ Appliance that requests resources on behalf of client machines - it hides and pr
 ## Encapsulation Throughout the Flow
 
 Let's say, one host has an application that generates data which is meant to be sent to the other side:
-![initial osi encapsulation](/assets/2025-08-15-22-51-57.png)
+![initial osi encapsulation](2025-08-15-22-51-57.png)
 When sending, the host is going to go through **encapsulation** process:
 ```
 1. Layer 4:          [TCP|DATA] <-- segment
@@ -87,6 +87,6 @@ When receiving, the host is going to go through the opposite - **de-encapsulatio
 ```
 In each de-encapsulation step, the receiver checks whether the destination matches to it - if so, it removes the header and passes it up to the next layer.  
 So, network devices, protocols operate at specific layers. Exactly that is shown in the picture below:  
-![osi encapsulation](/assets/2025-08-15-23-14-30.png)  
+![osi encapsulation](2025-08-15-23-14-30.png)  
 Do keep in mind that these boundaries are not strict. For example, ARP protocol links IP with MAC addresses, meaning it operates on layers 2 & 3.  
 The OSI model is not rigid, it's rather a conceptualization of the data flow through Internet.
